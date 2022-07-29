@@ -1,0 +1,98 @@
+@import"base";
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+}
+
+
+
+.container{
+    max-width:100%;
+    .formu{
+        display:flex;
+        padding:15px;
+    .form-control{
+        position:relative;
+        margin-bottom:5px;
+        padding:5px;
+        input{
+            display:block;
+            width:100%;
+            height:3rem;
+            padding:30px;
+            outline:none;
+            border:2px solid rgb(155, 153, 153);
+            border-radius:5px;
+
+
+        }
+
+        
+        i{
+            position:absolute;
+            top:50px;
+            right:40px;
+            visibility:hidden;
+        }
+
+        small{
+            visibility:hidden;
+            position:absolute;
+            padding-bottom:7px;
+        }
+    }
+    .Error input{
+        border:3px solid $orange-color;
+    }
+
+    .success input{
+        border:3px solid $green-color;
+    }
+
+    .Error small{
+        color:$orange-color;
+        visibility:visible;
+    }
+
+    .Error .iconError{
+        visibility:visible;
+
+    }
+    .success .iconsuccess{
+        visibility:visible;
+
+    }
+
+    }
+    label{
+        display:inline-block;
+        margin-bottom:5px;
+    }
+    .buton{
+        background:$red-color;
+        border:5px solid $red-color;
+        border-radius:5px;
+        color:white;
+        height:4rem;
+        margin-top:29px;
+        margin-right:10px;
+        padding:0 28px;
+        text-align:center;
+        width:100%;
+        transition:0.5s;
+        &:hover{
+            background:$yellow-color;
+            border:5px solid $yellow-color;
+            border-radius:5px;   
+        }
+    }
+}
+
