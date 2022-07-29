@@ -3,6 +3,7 @@ const username = document.getElementById('Username')
 const date = document.getElementById('Date')
 const pedple = document.getElementById('Pedple')
 const email = document.getElementById('Email')
+const time = document.getElementById('Time')
 
 button.addEventListener('click', (event)=>{
     event.preventDefault()
@@ -31,12 +32,28 @@ function chek(){
      success(email)
     }
 
-    if(date.value=''){
+    if(date.value==''){
         errorVal(date, 'Preencha o campo')
     }
 
     else{
         success(date)
+    }
+
+    if(pedple.value==''){
+        errorVal(pedple, 'Preencha o campo')
+    }
+
+    else{
+        success(pedple)
+    }
+
+    if(time.value==''){
+        errorVal(time, 'Preencha o campo')
+    }
+
+    else{
+        success(time)
     }
 
 }
